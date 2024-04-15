@@ -6,11 +6,11 @@ const currency :any =
     EURO :0.91,
     IND :74.53,
     LIRA : 32,
-    Dirhum : 3.69,
-    Dinar :3.11 ,
-    Riyal :3.75,
-    Pound :0.80,
-    Yun :158.32,
+    DIRHUM : 3.69,
+    DINAR :3.11 ,
+    RIYAL :3.75,
+    POUND :0.80,
+    YUN :158.32,
     PKR:280,
 };
  let user_anser = await inquirer.prompt(
@@ -20,15 +20,15 @@ const currency :any =
     name :'from',
     message:"enter from currency",
     type :'list',
-    choices:['USD','EURO','INR','Dirhum','Lira',
-    'Dinar','Riyal' ,'Pound','Yun','PKR']
+    choices:['USD','EURO',,'PKR','INR','DIRHUM','LIRA',
+    'DINAR','RIYAL' ,'POUND','Yun']
 },
 {
     name :'to',
     message:"enter TO currency",
     type :'list',
-    choices:['USD','EURO','INR','Dirhum','Dinar','Lira','Riyal',
-    'Pound','Yun','PKR']
+    choices:['USD','EURO', 'PKR','INR','DIRHUM','DINAR','LIRA','RIYAL',
+    'POUND','YUN']
 },
 {
     name :'amount',
